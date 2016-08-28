@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/blackBackground">
+
+    <LinearLayout
+        android:id="@+id/buttons_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/menuButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/buttonBackground"
+            android:onClick="goToMainMenu"
+            android:paddingBottom="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="0dp"
+            android:text="@string/to_menu"
+            android:textColor="@color/gameTextColor"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/startNewGameButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:background="@color/buttonBackground"
+            android:onClick="startGame"
+            android:paddingBottom="0dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="0dp"
+            android:text="@string/start_game"
+            android:textColor="@color/gameTextColor"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/records_linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/buttons_linear"
+        android:layout_above="@+id/adView"
+        android:layout_margin="15dp">
+
+        <ListView
+            android:background="@color/buttonsAreaBackground"
+            android:textColor="@color/buttonBackground"
+            android:id="@+id/records_listView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+        </ListView>
+
+    </LinearLayout>
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id">
+    </com.google.android.gms.ads.AdView>
+
+
+
+</RelativeLayout>

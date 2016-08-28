@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="blackBackground">#262626</color>
+    <color name="gameTextColor">#e6e6e6</color>
+    <color name="buttonBackground">#545454</color>
+    <color name="buttonsAreaBackground">#c5ccda</color>
+
+</resources>
